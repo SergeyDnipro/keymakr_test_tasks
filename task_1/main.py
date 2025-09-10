@@ -57,4 +57,4 @@ def update_task_fields(task_id: int, update_fields: UpdateTaskRecord):
 def delete_task(task_id: int):
     validate_task_id(task_id)
     deleted_task = tasks.pop(task_id)
-    return {"id": deleted_task.id, "deleted_task": deleted_task}
+    return {"id": task_id, "deleted_task": deleted_task}
