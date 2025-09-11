@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def start_page():
-    return {"msg": "FastAPI + Celery running!"}
+    return {"msg": "fetch data every 1 minute"}
 
 @app.get("/fetch")
 def fetch():
